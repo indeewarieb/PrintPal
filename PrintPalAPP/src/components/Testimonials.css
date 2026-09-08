@@ -1,0 +1,61 @@
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials__card {
+  max-width: 480px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 36px 40px;
+  background: var(--white);
+}
+
+.testimonials__mark {
+  color: var(--pink);
+  margin-bottom: 12px;
+}
+
+.testimonials__quote {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+}
+
+.testimonials__card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.testimonials__role {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+.testimonials__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.testimonials__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line);
+  padding: 0;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.testimonials__dot.is-active {
+  background: var(--pink);
+  transform: scale(1.3);
+}

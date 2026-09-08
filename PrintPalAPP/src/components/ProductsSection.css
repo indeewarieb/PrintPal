@@ -1,0 +1,139 @@
+.products {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 32px;
+  padding-top: 44px;
+  padding-bottom: 8px;
+}
+
+.products__sidebar h2 {
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 14px;
+  margin-bottom: 6px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.products__sidebar li a {
+  display: block;
+  padding: 11px 2px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--line);
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+
+.products__sidebar li a:hover {
+  color: var(--pink-dark);
+  padding-left: 6px;
+}
+
+.products__heading {
+  margin-bottom: 22px;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.products__empty {
+  padding: 60px 20px;
+  text-align: center;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 28px rgba(24, 34, 56, 0.08);
+  transform: translateY(-3px);
+}
+
+.product-card__category {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+
+.product-card__name {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.product-card__name:hover {
+  color: var(--pink-dark);
+}
+
+.product-card__price {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--pink-dark);
+}
+
+.tone-coral {
+  --tone-bg: #fbe9e4;
+  --tone-fg: #d9714f;
+}
+.tone-teal {
+  --tone-bg: #e2f2ee;
+  --tone-fg: #3a9c85;
+}
+.tone-blue {
+  --tone-bg: #e7eefb;
+  --tone-fg: #4472c4;
+}
+.tone-gold {
+  --tone-bg: #faf1de;
+  --tone-fg: #c99738;
+}
+.tone-green {
+  --tone-bg: #eaf4e5;
+  --tone-fg: #5b9e4a;
+}
+.tone-gray {
+  --tone-bg: #edece7;
+  --tone-fg: #77766c;
+}
+
+@media (max-width: 1080px) {
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .products__sidebar {
+    display: none;
+  }
+
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .products__grid {
+    grid-template-columns: 1fr;
+  }
+}

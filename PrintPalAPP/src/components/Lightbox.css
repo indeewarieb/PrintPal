@@ -1,0 +1,155 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(24, 34, 56, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.lightbox__panel {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.lightbox__close:hover {
+  color: var(--pink);
+}
+
+.lightbox__image {
+  height: 280px;
+  background: var(--tone-bg, #f2f0ea);
+  color: var(--tone-fg, #8b8672);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lightbox__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox__info {
+  padding: 22px 26px 26px;
+}
+
+.lightbox__category {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.lightbox__info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+
+.lightbox__price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--pink-dark);
+  margin-bottom: 18px;
+}
+
+.lightbox__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lightbox__stepper {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lightbox__stepper button {
+  width: 32px;
+  height: 36px;
+  background: var(--cream);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox__stepper button:hover {
+  background: var(--line);
+}
+
+.lightbox__stepper span {
+  width: 34px;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.lightbox__add {
+  flex: 1;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: background 0.15s ease;
+}
+
+.lightbox__add:hover {
+  background: var(--pink-dark);
+}
+
+.lightbox__add.is-added {
+  background: var(--green);
+}
+
+.lightbox__link {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--pink-dark);
+}

@@ -1,0 +1,43 @@
+.topbar {
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 9px 24px;
+  font-size: 12.5px;
+  letter-spacing: 0.01em;
+}
+
+.topbar__inner p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.topbar__social {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transition: background 0.15s ease;
+}
+
+.topbar__social:hover {
+  background: var(--pink);
+}
+
+@media (max-width: 720px) {
+  .topbar__inner p {
+    font-size: 11px;
+  }
+}
