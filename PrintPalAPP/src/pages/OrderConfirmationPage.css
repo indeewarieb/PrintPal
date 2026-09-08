@@ -1,0 +1,58 @@
+.order-confirmation {
+  padding: 70px 0;
+  text-align: center;
+  max-width: 440px;
+}
+
+.order-confirmation__icon {
+  color: var(--green);
+  margin-bottom: 16px;
+}
+
+.order-confirmation h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.order-confirmation > p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-bottom: 26px;
+}
+
+.order-confirmation__details {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.order-confirmation__details div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 13.5px;
+}
+
+.order-confirmation__details div + div {
+  border-top: 1px solid var(--line);
+}
+
+.order-confirmation__cta {
+  display: inline-block;
+  padding: 13px 26px;
+  background: var(--pink);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.order-confirmation__cta:hover {
+  background: var(--pink-dark);
+}

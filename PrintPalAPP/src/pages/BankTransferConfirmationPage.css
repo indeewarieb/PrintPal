@@ -1,0 +1,221 @@
+.bank-confirm {
+  padding-top: 24px;
+  padding-bottom: 60px;
+}
+
+.bank-confirm__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.bank-confirm__head h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.bank-confirm__home {
+  padding: 11px 20px;
+  background: var(--pink);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.bank-confirm__home:hover {
+  background: var(--pink-dark);
+}
+
+.bank-confirm__banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--cream);
+  border-radius: 8px;
+  padding: 18px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.bank-confirm__banner svg {
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.bank-confirm__lead {
+  text-align: center;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.bank-confirm__warning {
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--pink-dark);
+  margin-bottom: 30px;
+}
+
+.bank-confirm__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.bank-confirm__grid h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.bank-confirm__details {
+  background: var(--cream);
+  border-radius: 8px;
+  padding: 4px 18px;
+}
+
+.bank-confirm__details div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.bank-confirm__details div:last-child {
+  border-bottom: none;
+}
+
+.bank-confirm__details span {
+  color: var(--ink-soft);
+}
+
+.bank-confirm__details strong {
+  color: var(--pink-dark);
+  font-weight: 700;
+  text-align: right;
+}
+
+.bank-confirm__order {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.bank-confirm__order-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--line);
+}
+
+.bank-confirm__order-row:last-child {
+  border-bottom: none;
+}
+
+.bank-confirm__order-row--head {
+  background: var(--cream);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+.bank-confirm__order-row--total {
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.bank-confirm__upload-note {
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+
+.bank-confirm__upload-note a {
+  color: var(--pink-dark);
+  font-weight: 600;
+}
+
+.bank-confirm__dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1.5px dashed var(--line);
+  border-radius: 8px;
+  padding: 30px 16px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.bank-confirm__dropzone:hover,
+.bank-confirm__dropzone.is-dragover {
+  border-color: var(--pink);
+  background: var(--cream);
+}
+
+.bank-confirm__dropzone.has-file {
+  border-style: solid;
+  border-color: var(--green);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.bank-confirm__error {
+  font-size: 12px;
+  color: var(--pink-dark);
+  margin-top: 8px;
+}
+
+.bank-confirm__submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: background 0.15s ease;
+}
+
+.bank-confirm__submit:hover {
+  background: var(--pink-dark);
+}
+
+.bank-confirm__submit:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+@media (max-width: 780px) {
+  .bank-confirm__grid {
+    grid-template-columns: 1fr;
+  }
+}

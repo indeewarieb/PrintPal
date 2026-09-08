@@ -1,0 +1,124 @@
+.auth-page {
+  padding: 60px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-page__card {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-page__card h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.auth-page__card > p {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-bottom: 26px;
+  line-height: 1.6;
+}
+
+.auth-page__card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.auth-page__card label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 14px;
+  color: var(--ink-soft);
+}
+
+.auth-page__card label:focus-within {
+  border-color: var(--pink);
+  color: var(--ink);
+}
+
+.auth-page__card input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 13px 0;
+  font-size: 13.5px;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: transparent;
+}
+
+.auth-page__card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 13px;
+  background: var(--pink);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.auth-page__card button:hover {
+  background: var(--pink-dark);
+}
+
+.auth-page__card button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.auth-page__error {
+  font-size: 12.5px;
+  color: var(--pink-dark);
+}
+
+.auth-page__switch {
+  margin-top: 22px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.auth-page__switch a {
+  color: var(--pink-dark);
+  font-weight: 700;
+}
+
+.auth-page__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  background: #fdf3e2;
+  border: 1px solid #f0d6a3;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #7a5a1a;
+}
+
+.auth-page__notice svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #b8860b;
+}
+
+.auth-page__notice code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 11px;
+}
